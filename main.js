@@ -1,12 +1,13 @@
-$(".hamburger-menu").click(function);
+// individuiamo l'elemento da cliccare per visualizzare il menu hamburger
+$('.header-right > a').click(
+    function(){
+        $('.hamburger-menu').show();
+)
+};
 
-$("ul.hamburger-menu li").show(2000);
-
-$("ul.hamburger-menu li a").show(2000);
-
-
-$(".hamburger-menu li").show(2000);
-
-$("ul.hamburger-menu li:hidden").show(2000);
-
-$("ul.hamburger-menu has (ul)").show(2000);
+// individuiamo l'elemento da cliccare per nascondere il menu hamburger
+$('.close').click(
+    function(){
+        $('.hamburger-menu').hide();
+    }
+);
